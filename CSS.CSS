@@ -1,0 +1,139 @@
+body {
+  background-color: #c7c0c0;
+  padding: 25px 50px 50px 50px;
+  margin: 0px;
+  background-image: url(lanche.jpg);
+  background-size: 100%;
+}
+
+ input{
+  background-color: rgba(197, 44, 44, 0.74);
+  margin: 0px 0px 2px 0px;
+}
+.input{
+  width: 50px;
+}
+.preencha{
+  background-color: rgba(163, 47, 4, 0.938);
+  padding: 10px;
+
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex .input{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+}
+legend {
+  font-family: Arial;
+  font-size: 16px;
+  text-align: center;
+}
+
+label {
+  font-family: Arial;
+  flex: 1;
+  font-size: 12px;
+  text-align: justify;
+  /* flex-direction: row; */
+}
+table, tr, th, td{
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(85, 3, 3, 0.808);
+  border-radius: 2px;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+  background-color: rgba(240, 193, 193, 0.719); 
+}
+
+table.striped>tbody>tr>td {
+  border-radius: 0;
+}
+
+table.centered thead tr th, table.centered tbody tr td {
+  text-align: center;
+}
+
+.displayer {
+  max-width: 100%;
+  height: 350px;
+  margin: 0px 50px 10px 52px;
+}
+
+.comeco {
+  text-align: center;
+}
+
+H1 {
+  font-family: Arial;
+  font-size: 34px;
+  text-align: center;
+  color: rgb(8, 253, 8);
+}
+
+.striped {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+
+label:nth-of-type(3) {
+  flex: 3;
+}
+
+.pedido {
+  display: flex;
+}
+
+.flex_one {
+  flex: 1;
+  display: block
+}
+
+h2{
+  margin: 15px;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+}
+
+button {
+  border: 3px solid rgb(8, 253, 8);
+  margin: 30px 30px;
+  width: 150px;
+  height: 35px;
+  background-color: rgba(197, 44, 44, 0.74) ;
+}
+
+table{
+  background: rgba(163, 46, 4, 0.911);
+}
+.enviar{
+  position: relative;
+  margin: 4px 60px;
+}
+h3{
+  margin: 5px;
+  font-size: 22px;
+  font-family: Arial;
+}
+.cupom{
+  background-color: rgba(163, 47, 4, 0.938);
+  text-align: center;
+}
+.informaçoes{
+  text-align: justify;
+  font-family: arial;
+  font-size: 16px;
+  background-color: rgba(139, 39, 3, 0.938);
+}

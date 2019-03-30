@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Made with Thimble</title>
+  <link rel="stylesheet" href="CSS.css">
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script src="Metodos.js"></script>
+</head>
+
+<body>
+  <header class="comeco">
+
+    <h1>My Snacks</h1>
+  </header>
+  <section class="preencha">
+    <legend class="legenda"> Dados de contato </legend>
+    <div class="flex">
+      <div class="input">
+        <label for="Endereco flex_one"> Endereço: </label>
+        <input id = "end" class="flex_one idados" type="text" size="40" />
+      </div>
+      <div class="input">
+        <label for="Celular flex_one"> Celular: </label>
+        <input id = "cel" class="idados flex_one" type="telefone" size="40" />
+      </div>
+      <div class="input">
+        <label for="Email flex_one"> Email : </label>
+        <input id = "email" class="idados flex_one" type="Email" size="40" />
+      </div>
+    </div>
+  </section>
+  <h2>Pedido</h2>
+  <section class="pedido">
+    
+    <table class="striped centered comidas">
+      <tr class="titulo">
+        <th colspan="3">Lanches</th>
+      </tr>
+      <tbody class="corpo">
+        <tr class = "pedir">
+          <td class = "item">X-carne I</td>
+          <td>R$ <span class = "preço">14.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input" type="number" size="2" name="1" value="0" /><br></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-carne II</td>
+          <td>R$<span class = "preço"> 18.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input" type="number" size="2" name="2"  value="0" /></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-calabresa</td>
+          <td>R$<span class = "preço"> 18.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0" /></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-egg</td>
+          <td>R$<span class = "preço"> 18.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-egg-baycon</td>
+          <td>R$<span class = "preço"> 22.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-baycon-calabresa</td>
+          <td>R$<span class = "preço"> 22.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0" /></td>
+        </tr>
+        <tr class = "pedir"> 
+          <td class = "item">X-baycon</td>
+          <td>R$<span class = "preço"> 20.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0" /></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-baycon completo</td>
+          <td>R$<span class = "preço"> 24.00</span> </td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-salada</td>
+          <td>R$<span class = "preço"> 18.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">X-tudo</td>
+          <td>R$<span class = "preço"> 25.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"   value="0"/></td>
+        </tr>
+      </div>
+      </tbody>
+    </table>
+    <table class="Bebidas striped centered">
+      <tr class="titulo">
+        <th colspan="3">Bebidas</th>
+      </tr>
+      <tbody class="corpo">
+        <tr class = "pedir">
+          <td class = "item">Coca 350ml</td>
+          <td>R$<span class = "preço"> 4.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Coca 1L</td>
+          <td>R$<span class = "preço"> 7.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Fanta uva 350ml</td>
+          <td>R$<span class = "preço"> 4.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Fanta uva 1,5L</td>
+          <td>R$<span class = "preço"> 7.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number" value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Pepsi 350ml</td>
+          <td>R$<span class = "preço"> 4.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Pepsi 1,5L</td>
+          <td>R$<span class = "preço"> 7.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Sprite 350ml</td>
+          <td>R$<span class = "preço"> 4.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Sprite 1,5L</td>
+          <td>R$<span class = "preço"> 7.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Suco Laranja 350ml</td>
+          <td>R$<span class = "preço"> 5.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number"  value="0"/></td>
+        </tr>
+        <tr class = "pedir">
+          <td class = "item">Suco Laranja 1L</td>
+          <td>R$<span class = "preço"> 8.00</span></td>
+          <td><label for="quant"> Quantidade: </label><input class = "input"  type="number" value="0" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <div class ="cupom">
+<h3>Forma de pagamento</h3>
+<div class = "botoes">
+    <input id ="dinheiro" type="radio" name="gender" value="Dinherio"> Dinherio
+    <input id ="cheque" type="radio" name="gender" value="Cheque">  Cheque
+    <input id ="debito" type="radio" name="gender" value="Cartão de Debito"> Cartão  de Debito
+    <input id ="credito" type="radio" name="gender" value="Cartão de Credito">  Cartão de credito
+</div>
+<button class = "enviar" onclick= "capturar_pedido()" value="Exibir Alert" id ="botao">Enviar</button>
+</div>
+</body>
+</html>
